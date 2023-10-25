@@ -8,7 +8,7 @@ public class BasicSocketClient {
 
     public static void main(String[] args) {
     try{
-        Socket client = new Socket("200.128.140.129", 3322);
+        Socket client = new Socket("127.0.0.1", 3322);
         ObjectInputStream reader = new ObjectInputStream(client.getInputStream());
         
         JOptionPane.showMessageDialog(null, "Server message: " + reader.readUTF());
